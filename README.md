@@ -2,7 +2,6 @@
 为“土壤生物膜与环境健康”课题组量身打造一站式科研平台，完成网站建设、生物信息学数据分析与文献复现。
 
 
-RNAseqSimPkg-RNA 测序模拟软件包项目开发
 RNAseqSimPkg: RNA-seq Simulation, Analysis & Deployment
 
 本项目“RNAseqSimPkg: RNA-seq Simulation, Analysis & Deployment”由高春辉老师课堂（RNA-seq课程）启发，于2025年完成，旨在提供一个集数据模拟、差异表达分析、可视化与富集分析，以及Shiny交互与Plumber API部署于一体的完整R包解决方案。核心思路是通过可重复的模拟流程生成复杂RNA-seq数据，利用DESeq2进行差异分析，并通过Shiny与Plumber实现在线交互与REST服务，极大提高分析的可重现性与易用性。
