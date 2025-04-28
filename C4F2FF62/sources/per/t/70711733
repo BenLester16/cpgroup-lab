@@ -1,0 +1,26 @@
+{
+    "id": "70711733",
+    "path": "C:/Users/li'bin/Desktop/rnaseq_pkg/RNAseqSimPkg/run_app.R",
+    "project_path": "run_app.R",
+    "type": "r_source",
+    "hash": "132420969",
+    "contents": "",
+    "dirty": false,
+    "created": 1745724722437.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "35,0",
+        "scrollLine": "21"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1745501613,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1745501613,
+    "read_only": false,
+    "read_only_alternatives": []
+}
