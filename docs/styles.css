@@ -1,0 +1,1340 @@
+/* ===== 父容器重置 ===== */
+#quarto-content > div {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* ===== 导航栏 logo 对齐样式 ===== */
+  .navbar .nav-link img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  
+  /* ===== 固定导航栏样式优化（背景 + 阴影）===== */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+     height: 80px; 
+    color: #333 ;
+  }
+
+.navbar a, .navbar .nav-link {
+  color: #333 !important;
+}
+
+.navbar a:hover,
+.navbar .nav-link:hover {
+  color: #2f93b2 !important; /* 蓝色高亮，也可换成你喜欢的颜色 */
+}
+
+
+
+    /*主页轮播图 */
+
+  /* 重置Quarto默认header样式 */
+  #quarto-header {
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    border: none !important;
+  }
+  
+  /* 修复内容容器的高度计算 */
+  #quarto-content {
+    min-height: 100vh !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* ===== 页面整体排版美化 ===== */
+  body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 保持正常滚动，方便调试 */
+  background-color: #fafafa;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* 轮播图容器 */
+  .carousel-wrapper {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .hero-carousel {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: calc(100vw * 3);
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-inner img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+    .hero-carousel::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* 渐变高度 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.316), transparent);
+    pointer-events: none; /* 保证不影响按钮点击 */
+    z-index: 5;
+  }
+
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-btn.left { left: 10px; }
+  .carousel-btn.right { right: 10px; }
+
+
+
+
+
+
+
+
+  
+  
+  /* ===== 页面内容区域美化 ===== */
+  .home-section {
+    padding: 60px 20px;
+    width: 85vw;        /* 撑满整个视口宽度 */
+    margin-left: -30%;           /* 去掉居中限制 */
+    max-width: none;
+    background-color: #c8c8c800;
+  }
+
+  .home-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 600px;    /* 固定宽度 */
+    height: 337.5px; /* 16:9 比例，比如 600 * 9/16 */
+  }
+
+  .home-carousel-inner {
+    display: flex;
+    width: 300%;  /* 3 张图片 */
+    transition: transform 0.5s ease;
+    height: 100%; /* 高度撑满容器 */
+  }
+
+  .home-carousel-inner img {
+    width: 33.3333%;
+    height: 100%;
+    object-fit: cover; /* 图片裁剪，填满容器 */
+    flex-shrink: 0;
+  }
+
+  .home-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .home-carousel-btn.left {
+    left: 10px;
+  }
+
+  .home-carousel-btn.right {
+    right: 10px;
+  }
+
+  .home-flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .home-left {
+    flex: 1 1 45%;
+    max-width: 30%;
+  }
+
+  .home-right {
+    margin-left: auto;
+    flex: 1 1 45%;
+    max-width:45%;
+  }
+
+  .home-right h2 {
+  background-color: #004080;  /* 深蓝背景色 */
+  color: white;               /* 白色文字 */
+  padding: 8px 16px;          /* 上下8px，左右16px内边距 */
+  display: inline-block;      /* 宽度跟文字一样 */
+  margin-bottom: 16px;        /* 下方留点空 */
+  margin-top: -8px;
+  font-size: 28px;
+  font-weight: 600;           /* 字体加粗 */
+  width:50%;
+  }
+
+
+  .home-news-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .home-news-list li {
+    margin-bottom: 10px;
+  }
+
+
+  .home-news-list li:hover {
+  color: #004080;           /* 字体变蓝 */
+  text-decoration: underline; /* 添加下划线 */
+  cursor: pointer;            /* 鼠标变小手 */
+  }
+
+
+
+
+
+
+
+
+/* 首页研究方向 */
+.section-title1 {
+  display: block;
+  max-width: 100%;              /* 避免超出容器 */
+  padding: 8px 16px !important; /* 横向加大 padding，扩展背景 */
+  background-color: #004080;
+  color: white !important;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 28px !important; 
+  margin-bottom: 20px;
+  padding-left: 0;    /* 取消默认的padding-left */
+  padding-right: 16px; /* 保留右侧内边距 */
+  text-align: left !important;
+  display: block;
+  width: 20%;
+}
+
+.research-section {
+  position: relative;
+  min-height: 400px;
+  overflow: visible; /* 防止背景被裁剪 */
+}
+
+/* 背景层使用 ::before，并扩大宽度 */
+.research-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px; /* 向左偏移 200px */
+  width: calc(100% + 200px); /* 宽度增加偏移量，确保覆盖 */
+  height: 100%;
+  background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.834), rgb(255, 255, 255)),
+      url('images/research-background.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* 内容层置顶 */
+.research-section > *:not(.research-overlay) {
+  position: relative;
+  z-index: 2;
+}
+
+/* —— 封面容器 —— */
+.home-coverflow-wrapper {
+  perspective: 1200px;       /* 轻微加深透视 */
+  overflow: visible;
+  padding: 60px 0;           /* 上下留白更均衡 */
+}
+
+.home-coverflow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+
+  margin: 0 60px;            /* 左右边距扩大，五张时不贴边 */
+  box-sizing: border-box;
+}
+
+/* —— 卡片 —— */
+.home-coverflow-card {
+  min-width: 260px;          /* 略微收窄，整体更紧凑 */
+  height: 240px;
+  margin: 0 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  text-align: center;
+  transition: transform .5s ease, opacity .5s ease;
+  position: relative;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+/* 当前卡片高亮样式 */
+.home-coverflow-card.active {
+  opacity: 1 !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transform-style: preserve-3d;
+  z-index: 20 !important;
+}
+
+/* 其它卡片淡化 */
+.home-coverflow-card.dimmed {
+  opacity: 0.4;
+  box-shadow: none;
+  z-index: 1;
+}
+
+.home-coverflow-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-coverflow-nav button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+    /* 轮播容器样式 */
+/* 外层：限制宽度、隐藏溢出即可 */
+.group-carousel-wrapper{
+  position:relative;
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  margin-left: 0;
+  padding:0 80px;           /* 按钮空间 */
+  overflow:hidden;
+  perspective:1000px;
+}
+
+/* 内层：改为相对定位，让每张图绝对定位 */
+.group-carousel-inner{
+  position:relative;
+  width:100%;
+  height:400px;
+}
+
+/* 通用图片样式（所有图绝对定位，起点在容器水平中点） */
+.group-carousel-inner img{
+  position:absolute;
+  top:50%;
+  left:50%;                 /* 以中点为原点再平移 */
+  transform:translate(-50%,-50%) scale(.8);
+  width:40%;
+  height:250px;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:0 10px 20px rgba(0,0,0,.2);
+  transition:transform .6s ease,opacity .6s ease,filter .6s ease;
+  opacity:0;
+  filter:brightness(.7);
+  z-index:1;
+}
+
+/* ——五个“槽位”—— */
+
+/* 中间：放大、最亮 */
+.group-carousel-inner img.active{
+  transform:translate(-50%,-50%) scale(1);
+  width:60%;
+  height:350px;
+  opacity:1;
+  filter:none;
+  z-index:4;
+}
+
+/* 左右紧邻： */
+.group-carousel-inner img.prev{
+  transform:translate(calc(-150% + 40px),-50%) scale(.8) rotateY(15deg);
+  opacity:.8;
+  z-index:3;
+}
+.group-carousel-inner img.next{
+  transform:translate(calc(  50% - 40px),-50%) scale(.8) rotateY(-15deg);
+  opacity:.8;
+  z-index:3;
+}
+
+/* 再外侧两张：仅做过渡（几乎看不见） */
+.group-carousel-inner img.off-left{
+  transform:translate(calc(-250% + 60px),-50%) scale(.7) rotateY(25deg);
+  opacity:0;
+  z-index:2;
+}
+.group-carousel-inner img.off-right{
+  transform:translate(calc( 150% - 60px),-50%) scale(.7) rotateY(-25deg);
+  opacity:0;
+  z-index:2;
+}
+
+/* 按钮 */
+.group-carousel-btn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:60px;height:60px;border:none;border-radius:50%;
+  background:rgba(255,255,255,.8);font-size:28px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:10;
+}
+.group-carousel-btn.left {left:0;}
+.group-carousel-btn.right{right:0;}
+.group-carousel-btn:hover{background:#fff;transform:translateY(-50%) scale(1.1);}
+
+
+
+
+
+
+
+
+
+
+  /*成员展示界面
+
+
+  /* 成员列表容器调整 */
+.team-container {
+  width: 80%; /* 页面3/4宽度 */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0 20px;
+ }
+
+  /*成员列表界面大图 */
+
+.team-hero {
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.team-hero img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 渐变底部条，可选 */
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, rgba(63, 173, 149, 1), rgba(255, 255, 255, 0));
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+
+
+/* 下面正文容器：保持宽度为页面的 80% */
+.team-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  padding: 0 20px;
+}
+
+/* 调整页面主体位置 */
+body {
+  padding-top: 0; /* 如果之前有设置，可以移除或调整 */
+}
+
+
+
+/* ========== 成员列表新布局 ========== */
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* 成员项 - 横向布局 */
+/* ========== 修改后的成员卡片样式 ========== */
+/* 卡片容器 */
+.member-item {
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+  min-height: 80px;
+  position: relative;
+  overflow: visible; /* 允许溢出 */
+    transition: 
+    transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, box-shadow; /* 性能优化 */
+}
+
+
+
+.member-item:hover {
+  transform: translateY(-5px); /* 增加浮动高度 */
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.12), /* 主阴影 */
+    0 2px 6px rgba(0, 0, 0, 0.08);  /* 辅助阴影 */
+}
+
+/* 点击反馈效果 */
+.member-item:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.member-avatar {
+  flex: 1;
+  max-width: 33.33%;
+  position: relative;
+  z-index: 1;
+}
+
+/* 头像背景层 */
+.member-avatar::before {
+  content: "";
+  position: absolute;
+  top: -6px;       /* 向上溢出 */
+  left: -6px;      /* 向左溢出 */
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 173, 149, 1); /* 浅蓝色背景 */
+  z-index: -1;
+}
+
+/* 头像图片 */
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* 文字容器 - 占2份宽度 */
+.member-info {
+  flex: 4;                /* 占2份 */
+  padding: 12px 15px;
+  min-width: 0;           /* 允许内容收缩 */
+  box-sizing: border-box; /* 包含padding在宽度内 */
+}
+
+.member-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #333;
+  white-space: nowrap;  /* 防止名字换行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.member-title {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.3;
+}
+
+/* 响应式调整 */
+@media (max-width: 1200px) {
+  .member-avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .member-list {
+    grid-template-columns: repeat(2, 1fr); /* 中屏幕改为2列 */
+  }
+}
+
+@media (max-width: 768px) {
+  .member-list {
+    grid-template-columns: 1fr; /* 小屏幕改为1列 */
+  }
+  
+  .member-item {
+    padding: 1rem;
+  }
+  
+  .member-avatar {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* =========  成员展示页专用补丁  ========= */
+
+/* —— 顶部大图横幅 —— */
+.team-hero {
+  /* 让容器真正横跨整屏 */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw;
+
+  /* 视觉与排版 */
+  height: 250px;           /* 统一高度，可按需改 400px */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 避免和正文贴在一起 */
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+/* —— 正文容器：80% 宽 —— */
+.team-container {
+  width: 100%;
+  max-width: 5000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  left: -300px;
+}
+
+/* —— 大导师 —— */
+.director-image img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+.flex-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0px;
+  margin-bottom: 2rem;
+}
+
+.director-info {
+  background-color: rgba(63, 173, 149, 1);  /* 浅灰背景，可自定义颜色 */
+  border: 2px solid #cccccc00;     /* 灰色边框，可调颜色 */
+  padding: 20px;
+  height:400px;
+  color: rgb(240, 240, 240);
+  box-sizing: border-box;     /* 保证边框不会撑大容器 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ===== 相册样式 ===== */
+
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  /* 一排固定 5 张图 */
+  gap: 10px;
+  padding: 10px;
+  margin-left: -12vw;
+  width: 98vw;
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           /* ===== 研究方向样式 ===== */
+
+            /* —— 顶部大图设置 —— */
+            
+
+.image-hero {
+  width: 100vw;
+  height: 250px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-hero .hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 可选：底部左侧渐变条（你之前 hero-footer 风格） */
+.image-hero .hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, rgba(63, 173, 149, 1), rgba(255, 255, 255, 0));
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+
+
+            /* —— 按钮容器设置 —— */
+
+
+.sidebar-diamond-buttons {
+  position: fixed;
+  left: 0;
+  top: 68%;               /* 从屏幕顶部算起，60%高度 */
+  transform: translateY(-50%);
+  bottom: 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+
+         /* —— 左侧按钮设置 —— */
+
+
+.diamond-button {
+  width: 100px;
+  height: 120px;
+  background: #3ea0a7;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+  text-decoration: none;
+  clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 70%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: -25px 0; /* 嵌合关键，略微重叠 */
+  z-index: 1;
+  text-align: center;
+  line-height: 140px;
+}
+.sidebar-diamond-buttons a:last-child {
+  clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
+}
+
+.diamond-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+
+.sidebar-diamond-buttons {
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  z-index: 1000;
+}
+
+.content-area {
+  margin-left: 130px;
+  padding: 20px;
+}
+
+
+           /* —— 内容区设置 —— */
+
+
+.content-area {
+  margin-left: -80px;
+  padding: 20px;
+  max-width: 100vw;  
+}
+
+/* 课题组标题 */
+.section-title {
+  font-size: 1.2rem;       /* <<< 调整标题字号 */
+  font-weight: 600;        /* 加粗 */
+  color: #000000;
+  margin: 0 0 12px;
+}
+
+/* ===== 文本 + 图片横向排版 ===== */
+.section-content {
+  display: flex;
+  flex-direction: column;  /* 改为上下排列（默认 column 可省略） */
+  gap: 10px;   
+  height:600px !important; 
+}
+
+/* 左列文字宽度控制 */
+.section-text {
+  flex: 1 1 600px;         /* <<< 最小 600px，可伸缩填满 */
+}
+
+/* 右列图片宽度控制 */
+.section-image {
+  display: flex;
+  gap: 15px;               /* 图片间距 */
+  flex-wrap: wrap;         /* 允许换行（如果空间不足） */
+  padding: 10px;           /* 内边距（可选） */
+  margin-bottom: 200px;
+}
+
+.section-image img {
+  width: auto;             /* 保持原始宽度 */
+  max-width: 30%;          /* 三张图片均匀分布（可调整） */
+  height: auto;            /* 保持比例 */
+  border-radius: 6px;
+}
+
+/* ===== 组间分隔灰线 ===== */
+.section-divider {
+  width: 50%;              /* <<< 灰线长度占容器一半 */
+  height: 2px;
+  background: #ccc;
+  margin: 32px auto;       /* 顶底空隙并水平居中 */
+}
+
+/* 较小屏幕友好处理 —— 图片换到下一行 */
+@media (max-width: 600px) {
+  .section-content {
+    flex-direction: column;
+  }
+  .section-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+
+
+
+
+
+ /* ===== 研究成果 ===== */
+
+/* 大图 */
+.result-hero {
+  width: 100vw;
+  height: 250px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.result-hero .hero-img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;         /* 100% 父容器宽度 */
+  height: 40px;
+  background: linear-gradient(to right, rgba(63, 173, 149, 1), rgba(255, 255, 255, 0));
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+
+
+/* 精选轮播器 */
+/* 新轮播器命名改为 .carousel2-* 避免冲突 */
+.hero-carousel2 {
+  width: 100%;           /* 容器撑满父容器 */
+  max-width: 2400px!important;     /* 你想要最大宽度时可以设置 */
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -10px;
+  background-color: rgba(183, 229, 222, 0.2);
+}
+
+.carousel2-inner {
+  display: flex;
+  height: 100%;
+  gap:2rem;
+  transition: transform 0.5s ease;
+  /* 不设置固定宽度，宽度随内容自动撑开 */
+}
+
+.carousel2-item {
+  flex:0 0 calc((100% - 4rem)/3); /* 3张图减去两次间隙（2rem*2=4rem）平分宽度 */
+  box-sizing: border-box;
+  position: relative;
+  height:320px;
+}
+
+
+.carousel2-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.carousel2-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:115px;        /* 跟图片宽度一致 */
+  background: rgba(255, 255, 255, 0.278);
+  padding: 10px 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  text-align: left; /* 文字居中 */
+}
+
+.carousel2-wrapper {
+  position: relative;
+  width: 125%;
+  margin-left: -135px!important;
+  max-width: 2400px!important;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; 
+}
+
+.carousel2-btn {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin-top: -150px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  height: 100px;
+}
+
+
+
+
+
+
+               /* 成果正文部分 */
+.content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+  min-height: 400px;
+  margin-left: -100px;
+  margin-top: 20px;
+}
+
+.paper-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 侧栏 */
+.sidebar {
+  width: 180px;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #f0f8ff;
+}
+
+.sidebar nav ul li.active {
+  border-left-color: #007bff;
+  background-color: #e6f0ff;
+  color: #007bff;
+}
+
+/* 主内容区域 */
+.main-content {
+  flex: 1;
+  padding-left: 40px;
+  margin-top: -50px;
+}
+
+/* 内容面板默认隐藏 */
+.content-panel {
+  display: block;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* 当前显示内容 */
+.content-panel.active {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+/* 论文卡片（复用之前样式） */
+.paper-card, .book-card, .patent-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: xx-small;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.paper-card:hover, .book-card:hover, .patent-card:hover {
+  border-color: #007bff;
+  box-shadow: 0 6px 16px rgba(0,123,255,0.2);
+  transform: translateY(-4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== 新闻动态 ===== */
+/* 大图 */
+.news-hero {
+  width: 100vw;
+  height: 250px;
+  margin-left:-13vw !important;
+  max-width: 100vw;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-hero .news-hero-img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.news-hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, rgba(63, 173, 149, 1), rgba(255, 255, 255, 0));
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+
+/* 外层布局容器 */
+.news-section-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: -2vw;
+  max-width: 1200px;
+  width: 1200px;
+  align-items: flex-start;
+  gap: 30px; /* 卡片与轮播之间的间距 */
+  padding: 40px 20px;
+  background-color: #ffffff00;
+}
+
+/* 主体内容容器 */
+.news-container {
+  width: 1200px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* 每张新闻卡片 */
+.news-card {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  margin-bottom: 0; /* 底部不要留空 */
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-top: 1px solid #ccc; /* 用灰色线条隔开每条新闻 */
+}
+
+.news-card hr,
+.news-card-body hr,
+.news-card * {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+
+/* 第一条新闻不需要上边框 */
+.news-card:first-child {
+  border-top: none;
+}
+
+/* 标题样式 */
+.news-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  text-align: left;
+  margin-top: -30px;
+}
+
+/* 卡片内容布局 */
+.news-card-body {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* 图片区域 */
+.news-card-img {
+  flex: 1;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.news-card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 8px;
+}
+
+.news-card-img img:hover {
+  transform: scale(1.05);
+}
+
+/* 文字区域（留空） */
+.news-card-text {
+  flex: 2;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+/* ===== 网站页脚 ===== */
+.site-footer {
+  width: 100vw;
+  margin-bottom: -20%;
+  margin-left: calc(-1 * (100vw - 100%)/2); /* 消除可能的居中限制 */
+  background: linear-gradient(to right, rgba(62, 160, 167, 0.9), rgba(62, 160, 167, 0.616));
+  color: white;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
