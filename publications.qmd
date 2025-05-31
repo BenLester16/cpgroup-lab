@@ -1,0 +1,304 @@
+---
+title: "研究成果"
+format:
+  html:
+    page-layout: full
+    theme: default
+    toc: false
+    css: styles.css
+breadcrumbs:
+  - 首页: index.qmd
+  - 研究成果
+---
+
+```{=html}
+<!-- ★ 顶部大图 Hero 图区域 -->
+<div class="result-hero">
+  <img src="/images/publications/1.jpg" alt="研究成果大图" class="hero-img">
+  <div class="hero-footer">
+    <span>研究成果 Featured Publications</span>
+  </div>
+</div>
+```
+
+
+```{=html}
+<div class="carousel2-wrapper">
+  <button class="carousel2-btn left" onclick="prevSlide2()">&#10094;</button>
+
+  <div class="hero-carousel2">
+    <div class="carousel2-inner">
+      <div class="carousel2-item">
+        <img src="/images/publications/2.jpg" alt="图片1">
+        <div class="carousel2-caption">Effects of different soil organic amendments (OAs) on extracellular polymeric substances (EPS)</div>
+      </div>
+      <div class="carousel2-item">
+        <img src="/images/publications/3.jpg" alt="图片2">
+        <div class="carousel2-caption">Cooperative microbial interactions drive spatial segregation in porous environments</div>
+      </div>
+      <div class="carousel2-item">
+        <img src="/images/publications/4.jpg" alt="图片3">
+        <div class="carousel2-caption">Microbial extracellular polymeric substances (EPS) in soil: From interfacial behaviour to ecological multifunctionality</div>
+      </div>
+      <div class="carousel2-item">
+        <img src="/images/publications/5.jpg" alt="图片4">
+        <div class="carousel2-caption">Characterising soil extracellular polymeric substances (EPS) by application of spectral-chemometrics and deconstruction of the extraction process</div>
+      </div>
+      <div class="carousel2-item">
+        <img src="/images/publications/6.jpg" alt="图片5">
+        <div class="carousel2-caption">The mitigation of spatial constraint in porous environments enhances biofilm phylogenetic and functional diversity</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel2-btn right" onclick="nextSlide2()">&#10095;</button>
+</div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  let currentIndex2 = 0;
+  const inner2 = document.querySelector('.carousel2-inner');
+  const items2 = document.querySelectorAll('.carousel2-item');
+  const total2 = items2.length;
+  const visibleCount = 3;
+
+  // 计算步长 = item宽度 + gap宽度
+  function getStepWidth() {
+    const item = items2[0];
+    const style = window.getComputedStyle(item);
+    const gap = window.getComputedStyle(inner2).gap || '0px'; // 获取gap
+    const gapPx = parseFloat(gap);
+    return item.offsetWidth + gapPx;
+  }
+
+  function updateSlide2() {
+    const step = getStepWidth();
+    const maxIndex = total2 - visibleCount;
+    const safeIndex = Math.min(currentIndex2, maxIndex);
+    inner2.style.transform = `translateX(-${safeIndex * step}px)`;
+  }
+
+  window.nextSlide2 = function () {
+    if (currentIndex2 < total2 - visibleCount) {
+      currentIndex2++;
+      updateSlide2();
+    }
+  };
+
+  window.prevSlide2 = function () {
+    if (currentIndex2 > 0) {
+      currentIndex2--;
+      updateSlide2();
+    }
+  };
+
+  setInterval(() => {
+    if (currentIndex2 < total2 - visibleCount) {
+      currentIndex2++;
+    } else {
+      currentIndex2 = 0;
+    }
+    updateSlide2();
+  }, 5000);
+});
+</script>
+```
+
+
+```{=html}
+<section class="content-container">
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li class="active" data-target="papers">论文</li>
+        <li data-target="books">著书</li>
+        <li data-target="patents">专利</li>
+      </ul>
+    </nav>
+  </aside>
+
+    <main class="main-content">
+      <!-- 论文内容 -->
+      <div id="papers" class="content-panel active">
+        <h2>发表论文</h2>
+        <div class="paper-card">
+          <h3>Han, Yf. et al. “Responses of various organic carbon pools to elevated temperatures in soils”</h3>
+          <p><strong>作者：</strong>Yafeng Han,Qu Chenchen,Xiping Hu,Pan Sun,Jie Kang,Peng Cai,Xingmin Rong,Wenli Chen,Qiaoyun Huang</p>
+          <p><strong>期刊：</strong><em>The Science of The Total Environment</em>, 2024</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1016/j.scitotenv.2024.176836" target="_blank" rel="noopener">10.1016/j.scitotenv.2024.176836</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Amina, H. et al. “Integrated application of synthetic community reduces consumption of herbicide in field Phalaris minor control”</h3>
+          <p><strong>作者：</strong>Amina Hadayat,Zahir Ahmad Zahir,Peng Cai,Chunhui Gao</p>
+          <p><strong>期刊：</strong><em>Soil Ecology Letters</em>, 2023</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1007/s42832-023-0207-1" target="_blank" rel="noopener">10.1007/s42832-023-0207-1</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Chen, Kh. et al. “Metabolic coupling between soil aerobic methanotrophs and denitrifiers in rice paddy fields”</h3>
+          <p><strong>作者：</strong>Kang-Hua Chen,Jiao Feng,Paul L. E. Bodelier,Ziming Yang,Qiaoyun Huang,Manuel Delgado-Baquerizo,Peng Cai,Wenfeng Tan,Yu-Rong Liu</p>
+          <p><strong>期刊：</strong><em>Tature Communications</em>, 2024</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1038/s41467-024-47827-y" target="_blank" rel="noopener">10.1038/s41467-024-47827-y</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Liao, H. et al. “Protists regulate microbially mediated organic carbon turnover in soil aggregates”</h3>
+          <p><strong>作者：</strong>Hao Liao,Xiuli Hao,Yiting Li,Silin Ma,Shenghan Gao,Peng Cai,Wenli Chen,Qiaoyun Huang</p>
+          <p><strong>期刊：</strong><em>The Science of The Total Environment</em>, 2024</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1016/j.scitotenv.2024.176836" target="_blank" rel="noopener">10.1016/j.scitotenv.2024.176836</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Kang, J. et al. “Organo–organic interactions dominantly drive soil organic carbon accrual”</h3>
+          <p><strong>作者：</strong>Jie Kang,Chenchen Qu,Wenli Chen,Peng Cai,Chengrong Chen,Qiaoyun Huang</p>
+          <p><strong>期刊：</strong><em>Global Change Biology</em>, 2024</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1111/gcb.17147" target="_blank" rel="noopener">10.1111/gcb.17147</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Wang, Fy. et al. “Combating wheat yellow mosaic virus through microbial interactions and hormone pathway modulations”</h3>
+          <p><strong>作者：</strong>Fangyan Wang,Haoqing Zhang,Hongwei Liu,Chuanfa Wu,Yi Wan,Lifei Zhu,Jian Yang,Peng Cai,Jianping Chen and Tida Ge</p>
+          <p><strong>期刊：</strong><em>MICROBIOME</em>, 2024</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1186/s40168-024-01911-z" target="_blank" rel="noopener">10.1186/s40168-024-01911-z</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Guo, Lk. et al. “Trade-off between Pore-Throat Structure and Mineral Composition in Modulating the Stability of Soil Organic Carbon”</h3>
+          <p><strong>作者：</strong>Lingke Guo,Chenchen Qu,Yue Zhou,Yuexi Chen,Peng Cai,Wenli Chen,Chengrong Chen,Qiaoyun Huang</p>
+          <p><strong>期刊：</strong><em>Environmental Science & Technology</em>, 2024</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1021/acs.est.3c09886" target="_blank" rel="noopener">10.1021/acs.est.3c09886</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Chen, Jz. et al. “Extracellular polymeric substances and mineral interfacial reactions control the simultaneous immobilization and reduction of arsenic (As(V))”</h3>
+          <p><strong>作者：</strong>Jinzhao Chen,Chechen Qu,Man Lu,Ming Zhang,Yichao Wu,Chunhui Gao,Qiaoyun Huang,Peng Cai</p>
+          <p><strong>期刊：</strong><em>Journal of Hazardous Materials</em>, 2023</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1016/j.jhazmat.2023.131651" target="_blank" rel="noopener">10.1016/j.jhazmat.2023.131651</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Huang, Q. et al. “Dichotomous Role of Humic Substances in Modulating Transformation of Antibiotic Resistance Genes in Mineral Systems”</h3>
+          <p><strong>作者：</strong>Qiong Huang,Jiaojiao Zhu,Qu Chenchen,Yunhao Wang,Xiuli Hao,Wenli Chen,Peng Cai,Qiaoyun Huang</p>
+          <p><strong>期刊：</strong><em>Environmental Science and Technology</em>, 2022</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1021/acs.est.2c06410" target="_blank" rel="noopener">10.1021/acs.est.2c06410</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Wu, Yc. et al. “Cooperative microbial interactions drive spatial segregation in porous environments”</h3>
+          <p><strong>作者：</strong>Yichao Wu,Chengxia Fu,Caroline L. Peacock,Søren J. Sørensen,Marc A. Redmile-Gordon,Keqing Xiao,Chunhui Gao,Jun Liu,Qiaoyun Huang,Zixue Li,Peiyi Song,Yong-Guan Zhu,Jizhong Zhou,Peng Cai</p>
+          <p><strong>期刊：</strong><em>Nature Communications</em>, 2023</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1038/s41467-023-39991-4" target="_blank" rel="noopener">10.1038/s41467-023-39991-4</a></p>
+          <div class="paper-links">
+          </div>
+        </div>
+
+        <div class="paper-card">
+          <h3>Liao, H. et al. “Microbial autotrophy explains large‐scale soil CO2 fixation”</h3>
+          <p><strong>作者：</strong>Hao Liao,Xiuli Hao,Fei Qin,Manuel Delgado‐Baquerizo,Yurong Liu,Jizhong Zhou,Peng Cai,Wenli Chen,Qiaoyun Huang</p>
+          <p><strong>期刊：</strong><em>Global Change Biology</em>, 2022</p>
+          <p><strong>DOI：</strong><a href="https://doi.org/10.1111/gcb.16452" target="_blank" rel="noopener">10.1111/gcb.16452</a></p>
+          <div class="paper-links">>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- 著书内容 -->
+      <div id="books" class="content-panel">
+        <h2>著书</h2>
+        <div class="book-list">
+          <div class="book-card">
+            <h3>《土壤生物化学》</h3>
+            <p><strong>作者：</strong>蔡鹏</p>
+            <p><strong>出版社：</strong>中国农业出版社，2013</p>
+            <p><strong>ISBN：</strong>9787040416213</p>
+            <div class="book-links">
+              <a href="#" target="_blank">出版社页面</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="book-list">
+          <div class="book-card">
+            <h3>《土壤环境界面分析方法》</h3>
+            <p><strong>作者：</strong>蔡鹏</p>
+            <p><strong>出版社：</strong>科学出版社，2023</p>
+            <p><strong>ISBN：</strong>9787030753755</p>
+            <div class="book-links">
+              <a href="#" target="_blank">出版社页面</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 专利内容 -->
+      <div id="patents" class="content-panel">
+        <h2>专利</h2>
+        <div class="patent-list">
+          <div class="patent-card">
+            <h3>一种防治蓝莓根茎类病害组合物及其应用</h3>
+            <p><strong>发明人：</strong>施竹凤;杨佩文;孔垂思;蔡鹏;普特;张义杰;张庆;和国优;侯倩;高春辉;吴一超</p>
+            <p><strong>专利号：</strong>ZL 2025 1 0274381.0</p>
+            <p><strong>申请日期：</strong>2025年03月10日</p>
+            <div class="patent-links">
+              <a href="#" target="_blank">专利详情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <script>
+    document.querySelectorAll('.sidebar nav ul li').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelectorAll('.sidebar nav ul li').forEach(i => i.classList.remove('active'));
+        document.querySelectorAll('.content-panel').forEach(panel => panel.classList.remove('active'));
+
+        item.classList.add('active');
+
+        const targetId = item.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+
+```
+
+
+```{=html}
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>© 2025 华中农业大学 · 生物膜与环境健康课题组</p>
+      <p>地址：湖北省武汉市狮子山街1号</p>
+    </div>
+    <div class="footer-right">
+      <a href="a3250089107@163.com">联系邮箱</a>
+      <a href="https://www.hzau.edu.cn" target="_blank">学校官网</a>
+    </div>
+  </div>
+</footer>
+```
