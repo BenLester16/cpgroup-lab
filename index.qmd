@@ -1,0 +1,287 @@
+```{=html}
+<div class="carousel-wrapper">
+  <div class="hero-carousel">
+    <div class="carousel-inner">
+      <img src="images/main/main-hero1.jpg" class="active">
+      <img src="images/main/main-hero2.jpg">
+      <img src="images/main/main-hero3.jpg">
+    </div>
+    <button class="carousel-btn left" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-btn right" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-inner img');
+    const inner = document.querySelector('.carousel-inner');
+    const total = images.length;
+
+    function updateSlide() {
+      inner.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+
+    window.nextSlide = function () {
+      currentIndex = (currentIndex + 1) % total;
+      updateSlide();
+    };
+
+    window.prevSlide = function () {
+      currentIndex = (currentIndex - 1 + total) % total;
+      updateSlide();
+    };
+
+    setInterval(() => {
+      window.nextSlide();
+    }, 6000);
+  });
+</script>
+```
+
+
+```{=html}
+<!-- 第一区块：论文图+新闻 -->
+<section class="home-section">
+  <div class="home-flex-row">
+    <div class="home-left">
+      <div class="home-carousel-wrapper">
+        <div class="home-carousel-inner" id="home-paper-carousel">
+          <img src="images/main/lunbo1.jpg">
+          <img src="images/main/lunbo2.jpg">
+          <img src="images/main/lunbo3.jpg">
+        </div>
+        <button class="home-carousel-btn left" onclick="window.paperCarousel.prev()">&#10094;</button>
+        <button class="home-carousel-btn right" onclick="window.paperCarousel.next()">&#10095;</button>
+      </div>
+    </div>
+    
+    <!-- 整块跳转区域 -->
+    <div class="home-right" onclick="location.href='news.html'" style="cursor: pointer;">
+      <h2>新闻动态</h2>
+      <ul class="home-news-list">
+        <li><strong></strong> ⚪我校学者揭示“空间”解锁生物膜潜力的新策略</li>
+        <li><strong></strong> ⚪《自然—通讯》：我校学者揭示孔隙环境中生物膜群落组装新机制</li>
+        <li><strong></strong> ⚪“土壤碳循环与气候变化应对”中韩研究生交流会在华中农业大学举行</li>
+        <li><strong></strong> ⚪“美国马里兰大学陈峰教授受邀来院交流访问</li>
+        <li><strong></strong> ⚪狮山闹元宵，融乐贺团圆</li>
+        <li><strong></strong> ⚪新成员欢迎会顺利举行</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 第二区块：研究方向（Coverflow） -->
+<section class="home-section research-section">
+  <h2 class="section-title1">研究方向</h2>
+  <div class="home-coverflow-wrapper">
+    <div class="home-coverflow-container" id="home-coverflow-container">
+      <a href="research.html" class="home-coverflow-card">
+        <h3>EPS：胞外聚合物研究</h3>
+        <p>在土壤环境中，EPS在细胞与细胞、细胞与土壤之间起着桥接作用，与土壤矿物或有机质一起构成了生物膜中的胞外基质......</p> 
+      </a>
+      <a href="research.html" class="home-coverflow-card">
+        <h3>微流控技术</h3>
+        <p>微流控（Microfluidics，又称“芯片实验室”）是一种在微米尺度通道（10-1000 μm）中精确操控纳升至飞升级流体的跨学科技术......</p> 
+      </a>
+      <a href="research.html" class="home-coverflow-card">
+        <h3>合成菌群</h3>
+        <p>合成菌群是通过工程化手段，设计并优化合成微生物社群，研究菌种间代谢分工与稳态维持机制，将少数关键菌种按功能组合构建的微生物群落......</p> 
+      </a>
+      <a href="research.html" class="home-coverflow-card">
+        <h3>微界面研究</h3>
+        <p>探讨土壤-微生物-根系交互界面中的物质与能量传递规律，揭示微界面尺度上的关键生态过程。 重金属的生物有效性受土壤不同固相组分对其吸附的控制......</p> 
+      </a>
+      <a href="research.html" class="home-coverflow-card">
+        <h3>土壤环境化学</h3>
+        <p>我们实验室聚焦于环境界面过程与机制研究，以黄铁矿、针铁矿等矿物与希瓦氏菌体系为对象，探究光照下半导体矿物 - 微生物界面的光催化协同效应......</p> 
+      </a>
+    </div>
+    <div class="home-coverflow-nav">
+      <button onclick="moveCoverflow(-1)">&#10094; 上一个</button>
+      <button onclick="moveCoverflow(1)">下一个 &#10095;</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 第三区块：课题组掠影轮播 -->
+<section class="home-section">
+  <h2 style="text-align:center;padding:0 20px;margin-left:0px;">课题组掠影</h2>
+
+  <div class="group-carousel-wrapper">
+    <div class="group-carousel-inner" id="home-group-carousel">
+      <a href="gallery.qmd"><img src="images/main/group1.jpg" alt="group1"></a>
+      <a href="gallery.qmd"><img src="images/main/group2.jpg" alt="group2"></a>
+      <a href="gallery.qmd"><img src="images/main/group3.jpg" alt="group3"></a>
+      <a href="gallery.qmd"><img src="images/main/group4.jpg" alt="group4"></a>
+      <a href="gallery.qmd"><img src="images/main/group5.jpg" alt="group5"></a>
+    </div>
+
+    <button class="group-carousel-btn left" aria-label="上一张">❮</button>
+    <button class="group-carousel-btn right" aria-label="下一张">❯</button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+<!-- 第一区块：论文图+新闻 -->
+window.paperCarousel = (function() {
+  const container = document.getElementById('home-paper-carousel');
+  const total = container.querySelectorAll('img').length;
+  let currentIndex = 0;
+
+  function update() {
+    const shiftPercent = (100 / total) * currentIndex;
+    container.style.transform = `translateX(-${shiftPercent}%)`;
+  }
+
+  return {
+    prev: function() {
+      currentIndex = (currentIndex - 1 + total) % total;
+      update();
+    },
+    next: function() {
+      currentIndex = (currentIndex + 1) % total;
+      update();
+    }
+  };
+})();
+
+
+
+
+
+
+
+
+<!-- 第三区块：课题组掠影轮播 -->
+document.addEventListener('DOMContentLoaded',()=>{
+  const inner   = document.getElementById('home-group-carousel');
+  const images  = [...inner.querySelectorAll('img')]; // 转成数组方便取模
+  const total   = images.length;
+  let index     = 0;          // 当前激活图片
+  let timer     = null;
+
+  /** 根据 index 给每张图分配槽位类 */
+  function render(){
+    images.forEach((img,i)=>{
+      img.className='';               // 清空
+      if(i===index){
+        img.classList.add('active');
+      }else if(i===(index-1+total)%total){
+        img.classList.add('prev');
+      }else if(i===(index+1)%total){
+        img.classList.add('next');
+      }else if(i===(index-2+total)%total){
+        img.classList.add('off-left');
+      }else if(i===(index+2)%total){
+        img.classList.add('off-right');
+      } // 余下的不加类，保持隐藏
+    });
+  }
+
+  function next(){
+    index=(index+1)%total;
+    render();
+  }
+  function prev(){
+    index=(index-1+total)%total;
+    render();
+  }
+  function autoPlay(ms=6000){
+    clearInterval(timer);
+    timer=setInterval(next,ms);
+  }
+
+  // 绑定按钮
+  document.querySelector('.group-carousel-btn.left') .addEventListener('click',prev);
+  document.querySelector('.group-carousel-btn.right').addEventListener('click',next);
+
+  // 初始化并开播
+  render();
+  autoPlay();
+});
+
+
+
+
+
+
+
+<!-- 第二区块：研究方向（Coverflow） -->
+/* -------- Cover-flow 基础参数 -------- */
+const CARD_SPACING   = 180;   // 缩小卡片间距
+const ROTATE_DEG     = 30;    // 缩小旋转角度
+const VISIBLE_RANGE  = 2;
+let currentIndex     = 0;
+
+
+/* -------- 保持原函数名不变，内部仅用上面参数 -------- */
+function updateCoverflow() {
+  const cards = document.querySelectorAll('.home-coverflow-card');
+  cards.forEach((card, i) => {
+    const offset = i - currentIndex;
+
+    /* 位移 + 旋转 */
+    const translateX = offset * CARD_SPACING;
+    const rotateY    = offset * -ROTATE_DEG;
+    card.style.transform = `translateX(${translateX}px) rotateY(${rotateY}deg)`;
+
+    /* 透明度 + 层级 */
+    if (i === currentIndex) {
+      card.classList.add('active');
+      card.classList.remove('dimmed');
+      card.style.opacity = '1';
+      card.style.zIndex  = '20';
+    } else {
+      card.classList.remove('active');
+      card.classList.add('dimmed');
+      card.style.opacity = Math.abs(offset) > VISIBLE_RANGE ? '0' : '0.4';
+      card.style.zIndex  = '10';
+    }
+  });
+}
+
+function moveCoverflow(direction) {
+  const cards    = document.querySelectorAll('.home-coverflow-card');
+  const maxIndex = cards.length - 1;
+  currentIndex  += direction;
+
+  /* 循环切换 */
+  if (currentIndex < 0)        currentIndex = maxIndex;
+  if (currentIndex > maxIndex) currentIndex = 0;
+
+  updateCoverflow();
+}
+
+document.addEventListener('DOMContentLoaded', updateCoverflow);
+</script>
+```
+
+
+```{=html}
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>© 2025 华中农业大学 · 生物膜与环境健康课题组</p>
+      <p>地址：湖北省武汉市狮子山街1号</p>
+    </div>
+    <div class="footer-right">
+      <a href="a3250089107@163.com">联系邮箱</a>
+      <a href="https://www.hzau.edu.cn" target="_blank">学校官网</a>
+    </div>
+  </div>
+</footer>
+```
