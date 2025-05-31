@@ -1,0 +1,490 @@
+---
+title: "研究团队"
+format:
+  html:
+    page-layout: full
+    theme: default
+    toc: false
+    css: styles.css
+breadcrumbs:
+  - 首页: index.qmd
+  - 团队成员
+---
+
+```{=html}
+<!-- ★ 顶部横幅（不要再嵌套一层 div） -->
+
+<div class="team-hero">
+  <img src="/images/member/member-hero.jpg" alt="团队照片" class="hero-img" />
+  <div class="hero-footer">
+    团队成员
+  </div>
+</div>
+
+
+<!-- ★ 正文开始：80% 宽度 -->
+<div class="team-container">
+
+<!-- 🧑‍🏫 课题组大导师展示模块 -->
+<div class="director-section">
+  <div class="director-card flex-row">
+    <div class="director-image">
+      <img src="/images/member/cai.jpg" alt="蔡鹏教授">
+    </div>
+    <div class="director-info">
+      <h1>蔡鹏 教授</h1>
+      <p class="title">首席科学家</p>
+      <div class="director-bio">
+        <p>
+          国家杰出青年基金与优秀青年基金获得者，中英“牛顿高级学者”，全国百篇优秀博士学位论文作者。
+          现任华中农业大学资源与环境学院副院长，农业微生物学国家重点实验室固定成员，农业农村部耕地质量标准化技术委员会委员。
+          担任中国土壤学会多个专业委员会委员，并兼任第11届界面与污染国际会议共同主席、多个国内外期刊编委。
+          在 <i>ISME J</i>、<i>Environ Sci Technol</i>、<i>Water Res</i>、<i>Soil Biol Biochem</i> 等期刊发表论文百余篇。
+        </p>
+        <p>
+          <strong>研究方向：</strong>土壤生物膜与环境健康，土壤界面过程与污染修复，合成微生物组与土壤健康。
+        </p>
+        <p><strong>邮箱：</strong><a href="mailto:cp@mail.hzau.edu.cn">cp@mail.hzau.edu.cn</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ============ 教师板块 ============ -->
+  <section class="team-group">
+    <h2>教师团队</h2>
+    <div class="member-list">
+
+      <!--吴一超老师 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/wu.jpg" alt="吴一超老师">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">吴一超老师</h3>
+          <p class="member-title">副教授 / 微流控/生物膜EPS 课题组“学习委员”</p>
+        </div>
+      </div>
+      
+      <!--高春辉老师 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/gao.jpg" alt="高春辉老师">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">高春辉老师</h3>
+          <p class="member-title">副教授 / 合成菌群 课题组“文艺委员”</p>
+        </div>
+      </div>
+
+      <!-- 渠晨晨老师 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/qu.jpg" alt="渠晨晨老师">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">渠晨晨老师</h3>
+          <p class="member-title">副教授 / 土壤微界面 课题组“体育委员”</p>
+        </div>
+      </div>
+
+      <!-- 戴珂老师 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/dai.jpg" alt="戴珂老师">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">戴珂老师</h3>
+          <p class="member-title">副教授 / 土壤环境化学 课题组“政治委员”</p>
+        </div>
+      </div>
+      <!-- 朱韵林老师 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/zhu.jpg" alt="朱韵林老师">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">朱韵林老师</h3>
+          <p class="member-title">科研助理 / 课题组的“卫生委员”</p>
+        </div>
+      </div>
+      <!-- 张铭师兄 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/zhang.jpg" alt="张铭师兄">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">张铭师兄</h3>
+          <p class="member-title">博士后 /生物膜EPS/矿物 课题组“大师兄”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 博士生板块 ============ -->
+  <section class="team-group">
+    <h2>博士研究生</h2>
+    <div class="member-list">
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/amina.jpg" alt="amina博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">amina博士</h3>
+          <p class="member-title">研究方向：合成菌群 | 年级：博三</p>
+        </div>
+      </div>
+      <!-- 更多博士生 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/qpp.jpg" alt="钱佩佩博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">钱佩佩博士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 年级：博三</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/wcl.jpg" alt="吴尘聊博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">吴尘聊博士</h3>
+          <p class="member-title">研究方向：合成菌群 | 年级：博三</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/xcy.jpg" alt="许春元博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">许春元博士</h3>
+          <p class="member-title">研究方向：微流控 | 年级：博二</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/rjy.jpg" alt="任静怡博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">任静怡博士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 年级：博二</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lj.jpg" alt="李锦博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">李锦博士</h3>
+          <p class="member-title">研究方向：微流控 | 年级：博一</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/wga.jpg" alt="汪恭安博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">汪恭安博士</h3>
+          <p class="member-title">研究方向：微流控 | 年级：博一</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 硕士生板块 ============ -->
+  <section class="team-group">
+    <h2>硕士研究生</h2>
+    <div class="member-list">
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/cxy.jpg" alt="程小雨博士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">程小雨博士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 入学时间：2023</p>
+        </div>
+      </div>
+    <!-- 更多硕士生 -->
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/tlx.jpg" alt="童礼轩硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">童礼轩硕士</h3>
+          <p class="member-title">研究方向：微流控 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/zzs.jpg" alt="张钊硕硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">张钊硕硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/cyp.jpg" alt="陈雅平硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">陈雅平硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/jsl.jpg" alt="蒋双林硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">蒋双林硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lc.jpg" alt="兰聪硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">兰聪硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lxh.jpg" alt="刘鑫昊硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">刘鑫昊硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lyy.jpg" alt="刘芸芸硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">刘芸芸硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/tcr.jpg" alt="谭晨冉硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">谭晨冉硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/xsl.jpg" alt="许书麟硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">许书麟硕士</h3>
+          <p class="member-title">研究方向：土壤微界面 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/yyw.jpg" alt="易彧为硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">易彧为硕士</h3>
+          <p class="member-title">研究方向：微流控 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/zjl.jpg" alt="赵家乐硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">赵家乐硕士</h3>
+          <p class="member-title">研究方向：土壤微界面 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/zr.jpg" alt="张睿硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">张睿硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2023</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lb.jpg" alt="李斌硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">李斌硕士</h3>
+          <p class="member-title">研究方向：微流控 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/oyhn.jpg" alt="欧阳皓楠硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">欧阳皓楠硕士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/cy.jpg" alt="陈扬硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">陈扬硕士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lq.jpg" alt="刘琪硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">刘琪硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/sm.jpg" alt="孙孟硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">孙孟硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/czh.jpg" alt="陈芷涵硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">陈芷涵硕士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/dsy.jpg" alt="董思颖硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">董思颖硕士</h3>
+          <p class="member-title">研究方向：微流控 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/wjy.jpg" alt="王嘉怡硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">王嘉怡硕士</h3>
+          <p class="member-title">研究方向：微流控 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lzj.jpg" alt="刘芷骏硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">刘芷骏硕士</h3>
+          <p class="member-title">研究方向：生物膜EPS | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/hjh.jpg" alt="黄俊豪硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">黄俊豪硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/mx.jpg" alt="明轩硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">明轩硕士</h3>
+          <p class="member-title">研究方向：合成菌群 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/jzy.jpg" alt="姜泽宇硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">姜泽宇硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lxy.jpg" alt="刘晓英硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">刘晓英硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/sbf.jpg" alt="沈兵飞硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">沈兵飞硕士</h3>
+          <p class="member-title">研究方向：土壤环境化学 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/sxq.jpg" alt="宋雪琪硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">宋雪琪硕士</h3>
+          <p class="member-title">研究方向：土壤微界面 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/lt.jpg" alt="李婷硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">李婷硕士</h3>
+          <p class="member-title">研究方向：土壤微界面 | 入学时间：2024</p>
+        </div>
+      </div>
+      <div class="member-item">
+        <div class="member-avatar">
+          <img src="/images/member/zyh.jpg" alt="赵一晗硕士">
+        </div>
+        <div class="member-info">
+          <h3 class="member-name">赵一晗硕士</h3>
+          <p class="member-title">研究方向：土壤微界面 | 入学时间：2024</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+```
+
+```{=html}
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>© 2025 华中农业大学 · 生物膜与环境健康课题组</p>
+      <p>地址：湖北省武汉市狮子山街1号</p>
+    </div>
+    <div class="footer-right">
+      <a href="a3250089107@163.com">联系邮箱</a>
+      <a href="https://www.hzau.edu.cn" target="_blank">学校官网</a>
+    </div>
+  </div>
+</footer>
+```

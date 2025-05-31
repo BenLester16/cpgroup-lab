@@ -1,0 +1,114 @@
+---
+title: "课题组新闻"
+format:
+  html:
+    page-layout: full
+---
+
+
+
+
+```{=html}
+<!-- 大图区域 -->
+<div class="news-hero">
+  <img src="/images/news/1.jpg" alt="新闻大图" class="news-hero-img">
+  <div class="news-hero-footer">
+    <span>新闻动态 News</span>
+  </div>
+</div>
+
+<!-- 正文内容 -->
+<div class="news-section-wrapper">
+    <div class="news-container">
+    <h1 class="news-title">最新动态</h1>
+        <div class="news-card">
+            <h2 class="news-card-title">我校学者揭示“空间”解锁生物膜潜力的新策略</h2>
+            <div class="news-card-body">
+                <div class="news-card-img">
+                    <img src="/images/news/6.jpg" alt="新闻图示">
+                </div>
+                <div class="news-card-text">
+                    <p>南湖新闻网讯（通讯员 吴一超 付承霞）近日，我校农业微生物资源发掘与利用全国重点实验室、资源与环境学院蔡鹏教授领衔的土壤生物膜与环境健康团队在Microbiome在线发表了题为“The mitigation of spatial constraint in porous environments enhances biofilm phylogenetic and functional diversity”的研究论文。该研究通过整合土壤微流控芯片与多组学技术，揭示了多孔环境的物理结构在塑造生物膜群落结构、调控组装过程和促进功能多样性方面的关键作用，为环境、工业及医学领域中有效调控微生物群落与功能提供了新见解。</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-card">
+            <h2 class="news-card-title">《自然—通讯》：我校学者揭示孔隙环境中生物膜群落组装新机制</h2>
+            <div class="news-card-body">
+                <div class="news-card-img">
+                    <img src="/images/news/3.jpg" alt="新闻图示">
+                </div>
+                <div class="news-card-text">
+                    <p>近日，我校农业微生物资源发掘与利用全国重点实验室、资源与环境学院黄巧云教授团队在孔隙环境中生物膜群落组装方面取得新进展，相关研究成果以“Cooperative microbial interactions drive spatial segregation in porous environments”为题在Nature Communications上发表。</p>
+                    <p>南湖新闻网讯（通讯员 吴一超 付承霞）该研究利用自主构建的土壤微流控芯片结合多组学技术，揭示了微生物相互作用驱动孔隙环境中生物膜群落组装及其空间生态位分化机制，为理解自然生态系统中微生物群落多样性的形成与稳定过程提供了新见解。</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-card">
+            <h2 class="news-card-title">我院师生参加2023年中国土壤学会土壤化学专业委员会学术研讨会</h2>
+            <div class="news-card-body">
+                <div class="news-card-img">
+                    <img src="/images/news/4.jpg" alt="新闻图示">
+                </div>
+                <div class="news-card-text">
+                    <p>（通讯员：钱佩佩）2023年9月23日至25日，由中国土壤学会土壤化学专业委员会主办、宁波大学农产品质量安全危害因子与风险防控国家重点实验室承办的“2023年中国土壤学会土壤化学专业委员会学术会研讨会”在浙江宁波顺利召开。我院黄巧云、谭文峰和蔡鹏等老师带领30余名研究生参加了此次学术研讨会。</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-card">
+            <h2 class="news-card-title">狮山闹元宵，融乐贺团圆</h2>
+            <div class="news-card-body">
+                <div class="news-card-img">
+                    <img src="/images/news/5.jpg" alt="新闻图示">
+                </div>
+                <div class="news-card-text">
+                    <p>近日，我校农业微生南湖新闻网讯（记者 匡敏）花灯庆元宵，皓月贺团圆。2月12日晚,正月十五元宵之夜，狮子山广场张灯结彩，校党委书记高翅，校党委副书记王从严，副校长李大鹏，校党委常委李向东、李金发与返校师生相聚一堂，赏花灯、品元宵，猜灯谜、舞狮子，共同感受元宵佳节喜乐团圆的氛围。</p>
+                    <p>奖品兑换区前人潮涌动，欢声笑语不绝于耳。三千余份精心准备的礼品如同节日的使者，将喜乐团圆的祝福传递给师生。</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-card">
+            <h2 class="news-card-title">“土壤碳循环与气候变化应对”中韩研究生交流会在华中农业大学举行</h2>
+            <div class="news-card-body">
+                <div class="news-card-img">
+                    <img src="/images/news/7.jpg" alt="新闻图示">
+                </div>
+                <div class="news-card-text">
+                    <p>2025年2月27日，以“土壤碳循环与气候变化应对”为主题的中韩研究生交流会在华中农业大学举行。来自韩国庆尚国立大学、顺天国立大学的研究生代表团与华中农业大学资源与环境学院的研究生们齐聚一堂，共同探讨土壤碳循环学术前沿。</p>
+                    <p>华中农业大学资源与环境学院副院长蔡鹏教授致欢迎词，介绍了学院历史沿革、学科建设、以及在土壤碳循环研究领域的重要成果，并表达了深化中韩研究生学术交流的期望。韩国土壤学会主席、庆尚国立大学Pil Joo Kim教授、Benjamin L. Turner教授，顺天国立大学Sang Yoon Kim教授，以及华中农业大学黄巧云教授、吴一超副教授、渠晨晨副教授等出席并担任学术指导。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <h2 class="news-card-title">“美国马里兰大学陈峰教授受邀来院交流访问</h2>
+            <div class="news-card-body">
+                <div class="news-card-img">
+                    <img src="/images/news/8.jpg" alt="新闻图示">
+                </div>
+                <div class="news-card-text">
+                    <p>2月18日，受我院吴一超副研究员邀请，美国马里兰大学陈峰教授来院进行交流访问，并做客资源与环境学院“生态环境与绿色发展高端论坛”，作了题为“Microbial Adaptation for Degrading Recalcitrant Dissolved Organic Carbon in the Dark Ocean – A Story of SAR202 Bacteria（深海微生物对降解惰性溶解有机碳的适应机制—以SAR202细菌为例）”的学术交流报告。我院蔡鹏教授、万彪教授、侯静涛副研究员、吴一超副研究员、渠晨晨副教授和相关研究生参与交流学习。</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div> 
+```
+
+
+
+```{=html}
+<div style="clear: both;"></div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>© 2025 华中农业大学 · 生物膜与环境健康课题组</p>
+      <p>地址：湖北省武汉市狮子山街1号</p>
+    </div>
+    <div class="footer-right">
+      <a href="a3250089107@163.com">联系邮箱</a>
+      <a href="https://www.hzau.edu.cn" target="_blank">学校官网</a>
+    </div>
+  </div>
+</footer>
+```
