@@ -1,0 +1,24 @@
+{
+    "id": "4D0B19DD",
+    "path": "C:/Users/li'bin/Desktop/rnaseq_pkg/RNAseqSimPkg/inst/shiny/app.R",
+    "project_path": "inst/shiny/app.R",
+    "type": "r_source",
+    "hash": "1104155486",
+    "contents": "",
+    "dirty": false,
+    "created": 1745724844928.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1745656953,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1745656953,
+    "read_only": false,
+    "read_only_alternatives": []
+}
